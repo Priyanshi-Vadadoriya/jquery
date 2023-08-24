@@ -1,0 +1,95 @@
+   
+Module 7) JQuery Basic, Effects & Advanced
+
+
+ 
+1.)What is jQuery? 
+
+---->	jQuery is a lightweight, "write less, do more", JavaScript library. 
+	The purpose of jQuery is to make it much easier to use JavaScript on your website. 
+ 
+	The jQuery library contains the following features:-
+		-HTML/DOM manipulation
+		-CSS manipulation
+		-HTML event methods
+		-Effects and animations
+		-AJAX
+		-Utilities
+
+
+
+
+2.) How to Apply CSS Using JQuery, How to Add Class and Remove Class in Jquery, JQuery Animation?
+----->
+
+addClass() - Adds one or more classes to the selected elements.
+removeClass() - Removes one or more classes from the selected elements.
+toggleClass() - Toggles between adding/removing classes from the selected elements.
+css() - Sets or returns the style attribute.
+
+ 
+To apply CSS using jQuery, you can use the .css() method. Here's an example: 
+ // Applying CSS to an element  
+$('#myElement').css('color', 'red');  
+ 
+// Applying multiple CSS properties  
+ 
+$('#myElement').css 
+ 
+({ 'color': 'red', 'font-size': '18px', }); 
+ 
+To add and remove classes using jQuery, you can use the .addClass() and .removeClass() methods, respectively. Here's how you can do it: 
+ 
+ // Adding a class to an element 
+ 
+ $('#myElement').addClass('myClass'); 
+ 
+ // Adding multiple classes  
+ 
+$('#myElement').addClass('class1 class2'); 
+ 
+ // Removing a class from an element 
+ 
+ $('#myElement').removeClass('myClass'); 
+ 
+For jQuery animation, you can use various methods provided by the library, such as .animate(), .slideDown(), .slideUp(), .fadeIn(), and .fadeOut(). These methods allow you to animate CSS properties and create visual effects. Here are a few examples: 
+ 
+ // Animating an element's width  
+ 
+$('#myElement').animate({ width: '200px' }, 1000); 
+ 
+ // Animation duration: 1000 milliseconds (1 second) 
+ 
+ // Sliding an element down $('#myElement').slideDown(500);  
+ 
+// Animation duration: 500 milliseconds (0.5 seconds) 
+ 
+ // Fading an element in $('#myElement').fadeIn(500);  
+ 
+// Animation duration: 500 milliseconds (0.5 seconds)  
+ 
+These are just basic examples, and there are many more animation methods and options available in jQuery. You can explore the jQuery documentation for further details and examples on how to use jQuery animations. 
+ 
+
+
+
+3.)How to create slider with animation?  
+------->
+
+To create a slider with animation using jQuery, you can utilize the combination of HTML, CSS, and jQuery. Here's a step-by-step guide to get you started:  
+<div class="slider">  
+  <div class="slide">Slide 1</div>  
+  <div class="slide">Slide 2</div>   
+<div class="slide">Slide 3</div>  
+</div>  
+<button id="prevBtn">Previous</button>  
+<button id="nextBtn">Next</button>  
+2. Apply CSS to style the slider and slides: 
+.slider {  
+  width: 400px;   height: 200px;   overflow: hidden;   position: relative;  
+}  .slide {   
+width:100%;   height: 100%;   position:absole;   top: 0;   left: 0;   
+display:noe;  
+}  
+.slide.active 	{   
+display: block; }  
