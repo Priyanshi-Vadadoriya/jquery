@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery_123.js"></script>
+</head>
+<body>
+
+    <h1>Heading</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, laborum quibusdam! Corporis nulla vero, accusamus consectetur soluta veritatis dolorem nisi velit, placeat magni labore minus optio rerum amet perspiciatis numquam.</p>
+
+    <a href="X.html">LINK</a>
+
+    <img src="x.jpg" alt="No Image">
+
+    <input type="text" value="hello">
+
+    <script>
+
+       
+        // $('h1').html("Maulik");
+        // $('H1').text("<u>Maulik</u>");
+        // $('p').text("Paragraph");
+        // $('p').html("<u><b>PARA</b></u>")
+        // $('a').html("HyperLINK");
+
+        // $('img').attr("alt","I dont know");
+        // $('input').attr("value","Pata nahi");
+        // $('input').val("testInput");
+
+    //    alert( $('h1').html());
+    $('p').html($('h1').html());
+
+   
+    $('img').attr("alt",$('h1').html())
+
+    $('p').mouseenter(function(){
+        $("input").val($('h1').html())
+    })
+
+      
+    </script>
+
+
+    
+</body>
+</html>
